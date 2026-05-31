@@ -7,186 +7,232 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="brand">
-            <div class="logo-placeholder">KNOW</div>
-            <div>
-                <h1>Colégio Técnico KNOW</h1>
-                <p>Educação técnica conectada ao futuro</p>
+
+<header class="site-header">
+    <div class="brand">
+        <img src="./logotipo.png" alt="Logo do Colégio Técnico KNOW" width="100" height="100">
+
+        <div>
+            <h1>Colégio Técnico KNOW</h1>
+            <p class="tagline">
+                Conhecimento que transforma, tecnologia que conecta, futuro que acontece.
+            </p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#hub">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- SEÇÃO HOME -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="eyebrow">Transformação digital em educação</span>
+
+            <h2>Portal Institucional do Colégio Técnico KNOW</h2>
+
+            <p>
+                Conheça a nova plataforma integrada com cursos,
+                cultura institucional e experiências digitais para jovens
+                em busca do futuro.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
+                <a href="#hub" class="btn btn-secondary">Fazer Quiz</a>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#hub">Hub</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <span class="eyebrow">Transformação digital em educação</span>
-                <h2>Portal Institucional do Colégio Técnico KNOW</h2>
-                <p>Conheça a nova plataforma integrada com cursos, cultura institucional e experiências digitais gamificadas para jovens em busca do futuro.</p>
-                <div class="hero-actions">
-                    <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
-                    <a href="#hub" class="btn btn-secondary">Abrir o Hub</a>
+        <div class="hero-image">
+            <div class="hero-card">
+                <h3>Faça Parte</h3>
+                <p>
+                    Aprenda com tecnologia, cuidado humano e gestão estratégica.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+
+        <div class="section-header">
+            <h2>Sobre o Colégio</h2>
+            <p>Uma instituição fictícia inspirada no futuro do ensino técnico.</p>
+        </div>
+
+        <div class="text-grid">
+
+            <article>
+                <h3>História</h3>
+
+                <p>
+                    Fundado em 2010, o Colégio Técnico KNOW nasceu com a missão
+                    de preencher a lacuna entre o ensino tradicional e as reais
+                    demandas do mercado de trabalho.
+                </p>
+            </article>
+
+            <article>
+                <h3>Missão</h3>
+
+                <p>
+                    Formar profissionais técnicos de excelência,
+                    unindo conhecimento teórico, prática de mercado
+                    e valores éticos humanos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Valores e Visão</h3>
+
+                <ul>
+                    <li>Inovação constante</li>
+                    <li>Ética e cuidado com o próximo</li>
+                    <li>Protagonismo do aluno</li>
+                    <li>Excelência técnica</li>
+                    <li>Empregabilidade e inovação</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section id="cursos" class="section section-alt">
+
+        <div class="section-header">
+            <h2>Nossos Cursos</h2>
+            <p>Programas desenhados para preparar estudantes para o mercado.</p>
+        </div>
+
+        <div class="course-grid">
+
+            <article class="course-card">
+                <span class="course-badge">Técnico em Informática</span>
+
+                <h3>Desenvolvimento de Sistemas e Infraestrutura</h3>
+
+                <p>
+                    Aprenda programação, banco de dados,
+                    redes e segurança da informação.
+                </p>
+            </article>
+
+            <article class="course-card">
+                <span class="course-badge">Técnico em Enfermagem</span>
+
+                <h3>Saúde e Prática Hospitalar</h3>
+
+                <p>
+                    Formação voltada para o cuidado do paciente,
+                    primeiros socorros e biossegurança.
+                </p>
+            </article>
+
+            <article class="course-card">
+                <span class="course-badge">Técnico em Administração</span>
+
+                <h3>Gestão de Negócios e Finanças</h3>
+
+                <p>
+                    Aprenda gestão, marketing, finanças e empreendedorismo.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="hub" class="section">
+
+        <div class="section-header">
+            <h2>Quiz Interativo</h2>
+            <p></p>
+        </div>
+
+        <div class="app-grid">
+
+            <article class="app-card">
+
+                <div class="quiz-panel" id="quiz-panel">
+
+                    <div class="quiz-start" id="quiz-start">
+                        <p>Vamos descobrir sua profissão do futuro?</p>
+
+                        <button class="btn btn-primary" id="start-quiz">
+                            Iniciar Quiz
+                        </button>
+                    </div>
+
+                    <div class="quiz-question hide" id="quiz-question">
+
+                        <div class="quiz-meta">
+                            <span id="quiz-counter"></span>
+                        </div>
+
+                        <h4 id="question-title"></h4>
+
+                        <form id="quiz-form">
+
+                            <label>
+                                <input type="radio" name="answer" value="a">
+                                <span id="answer-a"></span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="answer" value="b">
+                                <span id="answer-b"></span>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="answer" value="c">
+                                <span id="answer-c"></span>
+                            </label>
+
+                            <button type="submit" class="btn btn-secondary">
+                                Próxima
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="quiz-result hide" id="quiz-result">
+
+                        <h4 id="result-title"></h4>
+
+                        <p id="result-text"></p>
+
+                        <button class="btn btn-primary" id="restart-quiz">
+                            Refazer Quiz
+                        </button>
+
+                    </div>
+
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-card">
-                    <h3>Faça parte</h3>
-                    <p>Aprenda com tecnologia, cuidado humano e gestão estratégica.</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="sobre" class="section">
-            <div class="section-header">
-                <h2>Sobre o Colégio</h2>
-                <p>Uma instituição fictícia inspirada no futuro do ensino técnico.</p>
-            </div>
-            <div class="text-grid">
-                <article>
-                    <h3>História</h3>
-                    <p>Fundado por educadores visionários, o Colégio Técnico KNOW nasceu para conectar jovens à inovação, tecnologia e serviços essenciais de forma prática e profissional.</p>
-                </article>
-                <article>
-                    <h3>Missão</h3>
-                    <p>Promover desenvolvimento técnico, pensamento crítico e cidadania digital com metodologias atualizadas e aprendizado ativo.</p>
-                </article>
-                <article>
-                    <h3>Valores</h3>
-                    <ul>
-                        <li>Inovação</li>
-                        <li>Empatia</li>
-                        <li>Colaboração</li>
-                        <li>Excelência</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
+            </article>
 
-        <section id="cursos" class="section section-alt">
-            <div class="section-header">
-                <h2>Nossos Cursos</h2>
-                <p>Programas desenhados para preparar estudantes para o mercado.</p>
-            </div>
-            <div class="course-grid">
-                <article class="course-card">
-                    <span class="course-badge">Informática</span>
-                    <h3>Desenvolvedor Web e Sistemas</h3>
-                    <p>Foco em programação, redes, infraestrutura e soluções digitais com tecnologia de ponta.</p>
-                </article>
-                <article class="course-card">
-                    <span class="course-badge">Enfermagem</span>
-                    <h3>Cuidados em Saúde</h3>
-                    <p>Formação prática para atuar em unidades de saúde com empatia, protocolos clínicos e humanização.</p>
-                </article>
-                <article class="course-card">
-                    <span class="course-badge">Administração</span>
-                    <h3>Gestão e Negócios</h3>
-                    <p>Competências em organização, finanças, liderança e tomada de decisão para ambientes corporativos.</p>
-                </article>
-            </div>
-        </section>
+        </div>
 
-        <section id="hub" class="section">
-            <div class="section-header">
-                <h2>Hub de Aplicações Internas</h2>
-                <p>Ferramentas práticas integradas para engajamento e captação de alunos.</p>
-            </div>
+    </section>
 
-            <div class="app-grid">
-                <article class="app-card">
-                    <h3>Quiz Interativo</h3>
-                    <p>Descubra qual curso combina mais com seu perfil.</p>
-                    <div class="quiz-panel" id="quiz-panel">
-                        <div class="quiz-start" id="quiz-start">
-                            <p>Vamos descobrir sua profissão do futuro?</p>
-                            <button class="btn btn-primary" id="start-quiz">Iniciar Quiz</button>
-                        </div>
-                        <div class="quiz-question hide" id="quiz-question">
-                            <div class="quiz-meta">
-                                <span id="quiz-counter">Pergunta 1 de 6</span>
-                            </div>
-                            <h4 id="question-title"></h4>
-                            <form id="quiz-form">
-                                <label><input type="radio" name="answer" value="a"><span id="answer-a"></span></label>
-                                <label><input type="radio" name="answer" value="b"><span id="answer-b"></span></label>
-                                <label><input type="radio" name="answer" value="c"><span id="answer-c"></span></label>
-                                <button type="submit" class="btn btn-secondary">Próxima</button>
-                            </form>
-                        </div>
-                        <div class="quiz-result hide" id="quiz-result">
-                            <h4 id="result-title"></h4>
-                            <p id="result-text"></p>
-                            <button class="btn btn-primary" id="restart-quiz">Refazer Quiz</button>
-                        </div>
-                    </div>
-                </article>
+</main>
 
-                <article class="app-card">
-                    <h3>Raspadinha de Marketing</h3>
-                    <p>Engaje visitantes com prêmios e diversão instantânea.</p>
-                    <div class="scratch-panel">
-                        <div class="scratch-card" id="scratch-card">
-                            <p>Raspe e descubra seu brinde</p>
-                            <button class="btn btn-primary" id="scratch-button">Raspar Agora</button>
-                        </div>
-                        <div class="scratch-result hide" id="scratch-result">
-                            <p id="scratch-prize"></p>
-                            <p id="scratch-message"></p>
-                        </div>
-                    </div>
-                </article>
+<footer class="site-footer">
+    <p>Colégio Técnico KNOW • Projeto de Portal Institucional Integrado</p>
+</footer>
 
-                <article class="app-card">
-                    <h3>Formulário Inteligente de Leads</h3>
-                    <p>Capture informações de interessados e mostre o painel da secretaria.</p>
-                    <form class="lead-form" id="lead-form">
-                        <label>Nome completo<input type="text" id="lead-name" placeholder="Nome" required></label>
-                        <label>Idade<input type="number" id="lead-age" min="14" placeholder="Idade" required></label>
-                        <label>E-mail<input type="email" id="lead-email" placeholder="email@exemplo.com" required></label>
-                        <label>Curso de interesse
-                            <select id="lead-course" required>
-                                <option value="">Selecione</option>
-                                <option value="Informática">Informática</option>
-                                <option value="Enfermagem">Enfermagem</option>
-                                <option value="Administração">Administração</option>
-                            </select>
-                        </label>
-                        <button type="submit" class="btn btn-primary">Enviar Lead</button>
-                        <p class="form-feedback" id="lead-feedback"></p>
-                    </form>
-                    <div class="admin-panel">
-                        <h4>Leads cadastrados</h4>
-                        <div class="table-wrapper">
-                            <table id="lead-table">
-                                <thead>
-                                    <tr>
-                                        <th>Nome</th>
-                                        <th>Idade</th>
-                                        <th>E-mail</th>
-                                        <th>Curso</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+<script src="./script.js"></script>
 
-    <footer class="site-footer">
-        <p>Colégio Técnico KNOW • Projeto de Portal Institucional integrado</p>
-    </footer>
-
-    <script src="./script.js"></script>
 </body>
 </html>
