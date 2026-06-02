@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Técnico KNOW</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+<!-- BARRA DE PONTOS (sticky top) -->
+<div class="points-bar" id="points-bar">
+    <div class="points-bar-inner">
+        <span class="points-label">
+            <span class="points-icon">⭐</span>
+            Seus Pontos KNOW
+        </span>
+        <div class="points-track-wrap">
+            <div class="points-track">
+                <div class="points-fill" id="points-fill"></div>
+                <div class="points-tiers">
+                    <span class="tier-mark" style="left:25%"  title="Prata">🥈</span>
+                    <span class="tier-mark" style="left:50%"  title="Ouro">🥇</span>
+                    <span class="tier-mark" style="left:75%"  title="Diamante">💎</span>
+                </div>
+            </div>
+            <span class="points-value" id="points-value">0 pts</span>
+        </div>
+        <span class="points-tier-badge" id="points-tier-badge">Bronze</span>
+    </div>
+    <div class="points-toast hide" id="points-toast"></div>
+</div>
+
+<header class="site-header">
+    <div class="brand">
+        <img src="./logo.png" alt="logo Colégio Técnico KNOW" width="160" height="160">
+        <div>
+            <h1>Colégio Técnico KNOW</h1>
+            <p class="tagline">Conhecimento que transforma, tecnologia que conecta.</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#stats">Estatísticas</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#hub">Quiz &amp; Raspadinha</a></li>
+            <li><a href="#feedback">Feedbacks</a></li>
+            <li><a href="#leads">Cadastro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="eyebrow">Transformação digital em educação</span>
+            <h2>Portal Institucional do Colégio Técnico KNOW</h2>
+            <p>
+                Conheça a nova plataforma integrada com cursos,
+                cultura institucional e experiências digitais para jovens
+                em busca do futuro.
+            </p>
+            <div class="hero-actions">
+                <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
+                <a href="#hub"    class="btn btn-secondary">Fazer Quiz</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-card">
+                <h3>Faça Parte</h3>
+                <p>Aprenda com tecnologia, cuidado humano e gestão estratégica.</p>
+                <ul class="hero-stats">
+                    <li><strong>3</strong> cursos técnicos</li>
+                    <li><strong>+500</strong> alunos formados</li>
+                    <li><strong>100%</strong> presencial</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="section-header">
+            <h2>Sobre o Colégio</h2>
+            <p>Uma instituição inspirada no futuro do ensino técnico.</p>
+        </div>
+        <div class="text-grid">
+            <article>
+                <h3>História</h3>
+                <p>
+                    Fundado em 2010, o Colégio Técnico KNOW nasceu com a missão
+                    de preencher a lacuna entre o ensino tradicional e as reais
+                    demandas do mercado de trabalho.
+                </p>
+            </article>
+            <article>
+                <h3>Missão</h3>
+                <p>
+                    Formar profissionais técnicos de excelência,
+                    unindo conhecimento teórico, prática de mercado
+                    e valores éticos humanos.
+                </p>
+            </article>
+            <article>
+                <h3>Valores e Visão</h3>
+                <ul>
+                    <li>Inovação constante</li>
+                    <li>Ética e cuidado com o próximo</li>
+                    <li>Protagonismo do aluno</li>
+                    <li>Excelência técnica</li>
+                    <li>Empregabilidade</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section id="stats" class="section section-alt">
+        <div class="section-header">
+            <h2>KNOW em Números</h2>
+            <p>Transparência e resultados que falam por si.</p>
+        </div>
+
+        <!-- Cards de métricas principais -->
+        <div class="stats-grid" id="stats-grid">
+            <div class="stat-card" data-target="94" data-suffix="%" data-label="Satisfação geral">
+                <div class="stat-ring-wrap">
+                    <svg class="stat-ring" viewBox="0 0 80 80">
+                        <circle class="ring-bg"   cx="40" cy="40" r="34"/>
+                        <circle class="ring-fill" cx="40" cy="40" r="34" data-pct="94" stroke="var(--primary)"/>
+                    </svg>
+                    <span class="stat-ring-val" data-target="94" data-suffix="%">0%</span>
+                </div>
+                <p class="stat-card-label">Satisfação dos Alunos</p>
+                <p class="stat-card-sub">avaliações 2024</p>
+            </div>
+            <div class="stat-card" data-target="89" data-suffix="%" data-label="Satisfação docente">
+                <div class="stat-ring-wrap">
+                    <svg class="stat-ring" viewBox="0 0 80 80">
+                        <circle class="ring-bg"   cx="40" cy="40" r="34"/>
+                        <circle class="ring-fill" cx="40" cy="40" r="34" data-pct="89" stroke="var(--scratch-gold)"/>
+                    </svg>
+                    <span class="stat-ring-val" data-target="89" data-suffix="%">0%</span>
+                </div>
+                <p class="stat-card-label">Satisfação Docente</p>
+                <p class="stat-card-sub">pesquisa interna 2024</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-big-wrap">
+                    <span class="stat-big-val" data-target="847" data-suffix="">0</span>
+                    <span class="stat-big-unit">alunos ativos</span>
+                </div>
+                <p class="stat-card-label">Alunos Matriculados</p>
+                <p class="stat-card-sub">2º semestre 2024</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-big-wrap">
+                    <span class="stat-big-val" data-target="42" data-suffix="">0</span>
+                    <span class="stat-big-unit">professores</span>
+                </div>
+                <p class="stat-card-label">Corpo Docente</p>
+                <p class="stat-card-sub">especialistas e mestres</p>
+            </div>
+        </div>
+
+        <!-- Gráfico de formação por ano -->
+        <div class="graduation-chart-wrap">
+            <h3 class="chart-title">Taxa de Formação por Ano</h3>
+            <p class="chart-subtitle">Percentual de alunos que concluíram o curso no prazo</p>
+            <div class="graduation-chart" id="graduation-chart">
+                <!-- barras geradas por JS -->
+            </div>
+            <div class="chart-legend">
+                <span class="legend-dot" style="background:var(--primary)"></span> Informática
+                <span class="legend-dot" style="background:var(--scratch-gold)"></span> Enfermagem
+                <span class="legend-dot" style="background:var(--success)"></span> Administração
+            </div>
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section id="cursos" class="section section-alt">
+        <div class="section-header">
+            <h2>Nossos Cursos</h2>
+            <p>Programas desenhados para preparar estudantes para o mercado.</p>
+        </div>
+        <div class="course-grid">
+            <article class="course-card">
+                <span class="course-badge">Técnico em Informática</span>
+                <h3>Desenvolvimento de Sistemas e Infraestrutura</h3>
+                <p>Aprenda programação, banco de dados, redes e segurança da informação.</p>
+            </article>
+            <article class="course-card">
+                <span class="course-badge">Técnico em Enfermagem</span>
+                <h3>Saúde e Prática Hospitalar</h3>
+                <p>Formação voltada para o cuidado do paciente, primeiros socorros e biossegurança.</p>
+            </article>
+            <article class="course-card">
+                <span class="course-badge">Técnico em Administração</span>
+                <h3>Gestão de Negócios e Finanças</h3>
+                <p>Aprenda gestão, marketing, finanças e empreendedorismo.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- HUB: QUIZ + RASPADINHA -->
+    <section id="hub" class="section">
+        <div class="section-header">
+            <h2>Quiz &amp; Raspadinha</h2>
+            <p>Descubra seu curso ideal e ganhe um prêmio exclusivo do KNOW!</p>
+        </div>
+
+        <!-- PAINEL DE PONTOS EXPANDIDO -->
+        <div class="points-panel">
+            <div class="points-panel-header">
+                <h3>⭐ Sistema de Pontos KNOW</h3>
+                <span class="points-panel-total" id="panel-points-total">0 pts</span>
+            </div>
+            <div class="points-how">
+                <p class="points-how-title">Como ganhar pontos:</p>
+                <ul class="points-actions-list">
+                    <li><span class="pa-pts">+50</span> Completar o quiz vocacional</li>
+                    <li><span class="pa-pts">+100</span> Fazer seu cadastro</li>
+                    <li><span class="pa-pts">+30</span> Enviar um feedback</li>
+                    <li><span class="pa-pts">+10</span> Visitar a seção de estatísticas</li>
+                    <li><span class="pa-pts">+10</span> Visitar a seção de cursos</li>
+                    <li><span class="pa-pts">+20</span> Raspar a raspadinha</li>
+                </ul>
+            </div>
+            <div class="points-tiers-legend">
+                <div class="ptl-item bronze-item">
+                    <span class="ptl-icon">🥉</span>
+                    <span class="ptl-name">Bronze</span>
+                    <span class="ptl-range">0–99 pts</span>
+                    <span class="ptl-bonus">Prêmios padrão</span>
+                </div>
+                <div class="ptl-item prata-item">
+                    <span class="ptl-icon">🥈</span>
+                    <span class="ptl-name">Prata</span>
+                    <span class="ptl-range">100–199 pts</span>
+                    <span class="ptl-bonus">+15% chance Ouro</span>
+                </div>
+                <div class="ptl-item ouro-item">
+                    <span class="ptl-icon">🥇</span>
+                    <span class="ptl-name">Ouro</span>
+                    <span class="ptl-range">200–299 pts</span>
+                    <span class="ptl-bonus">+30% chance Diamante</span>
+                </div>
+                <div class="ptl-item diamante-item">
+                    <span class="ptl-icon">💎</span>
+                    <span class="ptl-name">Diamante</span>
+                    <span class="ptl-range">300+ pts</span>
+                    <span class="ptl-bonus">Garantia de Ouro+</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hub-grid">
+
+            <!-- QUIZ -->
+            <article class="app-card" id="quiz-card">
+                <div class="app-card-label">Quiz Vocacional · +50 pts</div>
+                <div class="quiz-panel" id="quiz-panel">
+
+                    <div id="quiz-start">
+                        <h3 class="app-card-title">Qual é a sua profissão do futuro?</h3>
+                        <p class="app-card-desc">Responda 6 perguntas rápidas e descubra o curso técnico ideal para o seu perfil.</p>
+                        <button class="btn btn-primary" id="start-quiz">Iniciar Quiz</button>
+                    </div>
+
+                    <div class="quiz-question hide" id="quiz-question">
+                        <div class="quiz-meta">
+                            <span id="quiz-counter"></span>
+                            <div class="quiz-progress-bar">
+                                <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                            </div>
+                        </div>
+                        <h4 id="question-title"></h4>
+                        <form id="quiz-form">
+                            <label>
+                                <input type="radio" name="answer" value="a">
+                                <span id="answer-a"></span>
+                            </label>
+                            <label>
+                                <input type="radio" name="answer" value="b">
+                                <span id="answer-b"></span>
+                            </label>
+                            <label>
+                                <input type="radio" name="answer" value="c">
+                                <span id="answer-c"></span>
+                            </label>
+                            <button type="submit" class="btn btn-secondary">Próxima →</button>
+                        </form>
+                    </div>
+
+                    <div class="quiz-result hide" id="quiz-result">
+                        <div class="result-icon" id="result-icon"></div>
+                        <h4 id="result-title"></h4>
+                        <p id="result-text"></p>
+                        <div class="result-actions">
+                            <button class="btn btn-primary" id="restart-quiz">Refazer Quiz</button>
+                            <a href="#leads" class="btn btn-secondary">Fazer Matrícula</a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- RASPADINHA -->
+            <article class="app-card scratch-wrapper" id="scratch-card">
+                <div class="app-card-label">Raspadinha Premiada · +20 pts</div>
+                <h3 class="app-card-title">Raspe e ganhe!</h3>
+                <p class="app-card-desc">Participe da promoção do KNOW e concorra a prêmios exclusivos. Uma chance por dia!</p>
+
+                <div class="scratch-tier-info" id="scratch-tier-info">
+                    <!-- preenchido por JS -->
+                </div>
+
+                <div class="scratch-area" id="scratch-area">
+                    <div class="scratch-cover" id="scratch-cover">
+                        <span class="scratch-hint">Clique para raspar</span>
+                    </div>
+                    <div class="scratch-reveal hide" id="scratch-reveal">
+                        <div class="prize-level" id="prize-level"></div>
+                        <p class="prize-name" id="prize-name"></p>
+                        <small class="prize-info">Apresente esta tela na secretaria para resgatar.</small>
+                    </div>
+                </div>
+
+                <div class="scratch-footer" id="scratch-footer">
+                    <button class="btn btn-primary" id="scratch-btn">Raspar Agora</button>
+                    <p class="scratch-msg hide" id="scratch-msg"></p>
+                </div>
+
+                <a href="#leads" class="btn btn-secondary scratch-matricula hide" id="scratch-matricula">
+                    Usar desconto na matrícula →
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- FEEDBACKS -->
+    <section id="feedback" class="section section-alt">
+        <div class="section-header">
+            <h2>Feedbacks da Comunidade</h2>
+            <p>O que alunos, pais e professores dizem sobre o KNOW.</p>
+        </div>
+
+        <div class="feedback-layout">
+
+            <!-- FORMULÁRIO DE FEEDBACK -->
+            <div class="feedback-form-wrap">
+                <div class="feedback-form-header">
+                    <span class="app-card-label">Enviar Feedback · +30 pts</span>
+                    <h3>Deixe sua opinião</h3>
+                </div>
+                <form class="feedback-form" id="feedback-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="fb-nome">Seu nome</label>
+                        <input type="text" id="fb-nome" placeholder="Como quer ser identificado(a)">
+                        <span class="field-error" id="erro-fb-nome"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fb-tipo">Você é...</label>
+                        <select id="fb-tipo">
+                            <option value="">Selecione...</option>
+                            <option value="Aluno">Aluno(a)</option>
+                            <option value="Ex-aluno">Ex-aluno(a)</option>
+                            <option value="Responsável">Responsável</option>
+                            <option value="Professor">Professor(a)</option>
+                        </select>
+                        <span class="field-error" id="erro-fb-tipo"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Avaliação geral</label>
+                        <div class="star-rating" id="star-rating">
+                            <button type="button" class="star-btn" data-val="1">★</button>
+                            <button type="button" class="star-btn" data-val="2">★</button>
+                            <button type="button" class="star-btn" data-val="3">★</button>
+                            <button type="button" class="star-btn" data-val="4">★</button>
+                            <button type="button" class="star-btn" data-val="5">★</button>
+                        </div>
+                        <input type="hidden" id="fb-nota" value="">
+                        <span class="field-error" id="erro-fb-nota"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fb-texto">Seu depoimento</label>
+                        <textarea id="fb-texto" rows="4" placeholder="Conte sua experiência no Colégio KNOW..."></textarea>
+                        <span class="field-error" id="erro-fb-texto"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar Feedback</button>
+                        <p class="form-feedback" id="fb-feedback-msg" aria-live="polite"></p>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- MURAL DE FEEDBACKS -->
+            <div class="feedback-mural-wrap">
+                <div class="feedback-mural-header">
+                    <h3>Depoimentos</h3>
+                    <div class="fb-summary" id="fb-summary">
+                        <span class="fb-avg" id="fb-avg-stars">—</span>
+                        <span class="fb-avg-label">média geral</span>
+                        <span class="fb-count" id="fb-count">0 avaliações</span>
+                    </div>
+                </div>
+                <div class="feedback-mural" id="feedback-mural">
+                    <p class="empty-state" id="fb-empty">Nenhum depoimento ainda. Seja o primeiro!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LEADS -->
+    <section id="leads" class="section section-alt">
+        <div class="section-header">
+            <h2>Cadastro de Interesse</h2>
+            <p>Preencha seus dados e nossa equipe entrará em contato.</p>
+        </div>
+
+        <div class="leads-layout">
+
+            <!-- FORMULÁRIO -->
+            <div class="lead-form-wrapper">
+                <span class="app-card-label" style="margin-bottom:.75rem;display:inline-block">Cadastro · +100 pts</span>
+                <form class="lead-form" id="lead-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="lead-nome">Nome completo</label>
+                        <input type="text" id="lead-nome" placeholder="Seu nome completo" autocomplete="name">
+                        <span class="field-error" id="erro-nome"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lead-idade">Idade</label>
+                        <input type="number" id="lead-idade" placeholder="Sua idade" min="14" max="99">
+                        <span class="field-error" id="erro-idade"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lead-email">E-mail</label>
+                        <input type="email" id="lead-email" placeholder="seu@email.com" autocomplete="email">
+                        <span class="field-error" id="erro-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lead-curso">Curso de interesse</label>
+                        <select id="lead-curso">
+                            <option value="">Selecione um curso...</option>
+                            <option value="Técnico em Informática">Técnico em Informática</option>
+                            <option value="Técnico em Enfermagem">Técnico em Enfermagem</option>
+                            <option value="Técnico em Administração">Técnico em Administração</option>
+                        </select>
+                        <span class="field-error" id="erro-curso"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+                        <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- PAINEL ADMIN -->
+            <div class="admin-panel-wrapper">
+                <div class="admin-panel-header">
+                    <h3>Painel Administrativo</h3>
+                    <div class="admin-actions">
+                        <span class="lead-count" id="lead-count">0 cadastros</span>
+                        <button class="btn btn-danger" id="clear-leads">Limpar tudo</button>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <p class="empty-state" id="admin-empty">Nenhum cadastro registrado ainda.</p>
+                    <table id="admin-table" class="hide">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>E-mail</th>
+                                <th>Curso</th>
+                                <th>Data</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>Colégio Técnico KNOW &bull; Projeto de Portal Institucional Integrado</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
