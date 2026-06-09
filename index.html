@@ -33,7 +33,7 @@
 
 <header class="site-header">
     <div class="brand">
-        <img src="./logo.png" alt="logo Colégio Técnico KNOW" width="160" height="160">
+        <img src="./logotipo.png" alt="logo Colégio Técnico KNOW" width="160" height="160">
         <div>
             <h1>Colégio Técnico KNOW</h1>
             <p class="tagline">Conhecimento que transforma, tecnologia que conecta.</p>
@@ -125,7 +125,6 @@
             <p>Transparência e resultados que falam por si.</p>
         </div>
 
-        <!-- Cards de métricas principais -->
         <div class="stats-grid" id="stats-grid">
             <div class="stat-card" data-target="94" data-suffix="%" data-label="Satisfação geral">
                 <div class="stat-ring-wrap">
@@ -167,13 +166,10 @@
             </div>
         </div>
 
-        <!-- Gráfico de formação por ano -->
         <div class="graduation-chart-wrap">
             <h3 class="chart-title">Taxa de Formação por Ano</h3>
             <p class="chart-subtitle">Percentual de alunos que concluíram o curso no prazo</p>
-            <div class="graduation-chart" id="graduation-chart">
-                <!-- barras geradas por JS -->
-            </div>
+            <div class="graduation-chart" id="graduation-chart"></div>
             <div class="chart-legend">
                 <span class="legend-dot" style="background:var(--primary)"></span> Informática
                 <span class="legend-dot" style="background:var(--scratch-gold)"></span> Enfermagem
@@ -316,19 +312,10 @@
                 <h3 class="app-card-title">Raspe e ganhe!</h3>
                 <p class="app-card-desc">Participe da promoção do KNOW e concorra a prêmios exclusivos. Uma chance por dia!</p>
 
-                <div class="scratch-tier-info" id="scratch-tier-info">
-                    <!-- preenchido por JS -->
-                </div>
+                <div class="scratch-tier-info" id="scratch-tier-info"></div>
 
                 <div class="scratch-area" id="scratch-area">
-                    <div class="scratch-cover" id="scratch-cover">
-                        <span class="scratch-hint">Clique para raspar</span>
-                    </div>
-                    <div class="scratch-reveal hide" id="scratch-reveal">
-                        <div class="prize-level" id="prize-level"></div>
-                        <p class="prize-name" id="prize-name"></p>
-                        <small class="prize-info">Apresente esta tela na secretaria para resgatar.</small>
-                    </div>
+                    <!-- Canvas gerado por JS -->
                 </div>
 
                 <div class="scratch-footer" id="scratch-footer">
@@ -353,7 +340,6 @@
 
         <div class="feedback-layout">
 
-            <!-- FORMULÁRIO DE FEEDBACK -->
             <div class="feedback-form-wrap">
                 <div class="feedback-form-header">
                     <span class="app-card-label">Enviar Feedback · +30 pts</span>
@@ -406,7 +392,6 @@
                 </form>
             </div>
 
-            <!-- MURAL DE FEEDBACKS -->
             <div class="feedback-mural-wrap">
                 <div class="feedback-mural-header">
                     <h3>Depoimentos</h3>
@@ -433,7 +418,6 @@
 
         <div class="leads-layout">
 
-            <!-- FORMULÁRIO -->
             <div class="lead-form-wrapper">
                 <span class="app-card-label" style="margin-bottom:.75rem;display:inline-block">Cadastro · +100 pts</span>
                 <form class="lead-form" id="lead-form" novalidate>
@@ -475,7 +459,6 @@
                 </form>
             </div>
 
-            <!-- PAINEL ADMIN -->
             <div class="admin-panel-wrapper">
                 <div class="admin-panel-header">
                     <h3>Painel Administrativo</h3>
